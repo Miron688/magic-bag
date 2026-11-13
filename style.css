@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+
+body {
+    font-family: "Comic Neue", cursive;
+    background-image: linear-gradient(135deg, #ffafbd, #ffc3a0);
+    margin: 0px;
+    padding: 20px;
+    min-height: 100vh;
+}
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+}
+.main-title {
+    color: #ff6b6b;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+}
+button {
+    background-color: #4ecdc4;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    margin: 5px;
+    border-radius: 25px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+button:hover {
+    transition: scale(1.1);
+    background-color: #45b7af;
+}
+#result {
+    font-size: 24px;
+    font-weight: bold;
+    color: #556270;
+    margin: 20px 0px;
+    min-height: 40px;
+}
+.toys-list {
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 15px;
+    padding: 15px;
+    margin: 20px 0px;
+    min-height: 40px;
+}
+@keyframes bounce{
+    0%, 100%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(-10px);
+    }
+}
+.toy-item {
+    display: inline-block;
+    background-color: #ff6b6b;
+    color: white;
+    padding: 8px 15px;
+    margin: 5px;
+    border-radius: 20px;
+    animation: bounce 0.5s;
+}
